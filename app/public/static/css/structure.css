@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative; }
+  .container .image-container {
+    width: 100%;
+    height: 661px;
+    display: block;
+    background: url("../img/bg@2x.jpg") top center no-repeat;
+    background-size: contain; }
+  .container .col-6 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -1.5px;
+    margin-right: -1.5px; }
+  .container .col-12 {
+    width: 100%;
+    display: inline-block; }
+
+article {
+  text-align: center;
+  margin-bottom: 72px; }
+  article h1 {
+    font-size: 35px; }
+  article h3 {
+    font-size: 17px; }
+  article h4 {
+    color: #81E6FE;
+    font-size: 14px; }
+
+form {
+  max-width: 843px;
+  margin: 0 auto; }
+  form .input-group {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 47px; }
+    form .input-group label {
+      position: absolute;
+      bottom: 12px; }
+    form .input-group input,
+    form .input-group label {
+      width: 100%; }
+  form button[type="submit"] {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 41px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: inline-block; }
+    form button[type="submit"]:hover {
+      background: #fff;
+      color: #000; }
+
+.form-button-group {
+  text-align: center;
+  padding: 80px 0; }

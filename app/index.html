@@ -4,8 +4,64 @@
     <meta charset="utf-8">
     <title>Sansumg</title>
     <link rel="stylesheet" href="public/static/css/app.css">
+    <link rel="stylesheet" href="public/static/css/structure.css">
   </head>
   <body>
-      ooooi
+      <main class="container">
+        <section class="image-container"></section>
+        <article>
+            <h1>Prepare-se para ir além com o próximo Galaxy</h1>
+            <h3>Faça seu cadastro para saber tudo sobre o lançamento no Brasil em primeira mão</h3>
+            <h4>Todos os campos marcados com (*) são obrigatórios</h4>
+        </article>
+        <form class="form-container" action="index.html" method="post">
+          <div class="col-6">
+            <span class="input-group">
+              <label for="">Nome*</label>
+              <input type="text" name="nome" id="nome" value="" required>
+            </span>
+          </div>
+
+          <div class="col-6">
+            <span class="input-group">
+              <label for="sobrenome">Sobrenome*</label>
+              <input type="text" name="sobrenome" id="sobrenome" value="" required>
+            </span>
+          </div>
+
+          <div class="col-12">
+            <span class="input-group">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" value="" required>
+            </span>
+          </div>
+
+          <div class="col-12">
+            <span class="input-group">
+              <label for="email">Telefone</label>
+              <input type="tel" name="telfone" id="telfone" value="" required>
+            </span>
+          </div>
+
+
+          <span class="col-12">
+            <label for="">
+              <input type="checkbox" name="" value="" required>
+            </label>
+            Eu aceito as Políticas de Privacidade da Samsung *
+          </span>
+
+          <span class="col-12">
+            <label for="">
+              <input type="checkbox" name="" value="">
+            </label>
+            Gostaria de receber outras novidades da Samsung
+          </span>
+
+          <div class="col-12 form-button-group">
+            <button type="submit" name="button">ENVIAR</button>
+          </div>
+        </form>
+      </main>
   </body>
 </html>
