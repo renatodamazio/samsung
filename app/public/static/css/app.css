@@ -1,21 +1,48 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box !important; }
+  box-sizing: border-box !important;
+  outline: none; }
 
 html, body {
   color: #fff;
   background: #000;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-size: 16px;
+  family: "SamsungOne", arial; }
 
 input {
   background: none;
   border: none;
   height: 40px;
   border-bottom: 1px solid #fff;
-  color: #fff; }
+  color: #fff;
+  padding: 0 10px;
+  font-size: 16px; }
+  input[type="checkbox"] {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    input[type="checkbox"]:checked ~ .checker {
+      background: #fff;
+      transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+      input[type="checkbox"]:checked ~ .checker:after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 0px;
+        width: 5px;
+        height: 10px;
+        border: solid #000;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
 
 input,
 button {
-  transition: .400s ease-in-out; }
+  transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
